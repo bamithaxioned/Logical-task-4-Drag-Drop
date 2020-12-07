@@ -114,6 +114,7 @@ li {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  text-transform: uppercase;
 }
 
 a { 
@@ -162,6 +163,34 @@ header .wrapper { justify-content: space-between; }
 /*=================================
   main styling starts here
 =================================*/
+
+/* banner styling starts here */
+  .banner .wrapper {
+    padding: 20px;
+    color: #000;
+  }
+
+  .priority-heading {
+    font-size: 16px;
+    color: inherit;
+    font-weight: 500;
+    letter-spacing: .5px;
+  }
+
+  .priority-box {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .priority-content {
+    width: 30%;
+    background-color: #000;
+    height: 400px;
+  }
+  
+/* banner styling ends here */
 
 /*=================================
   main styling ends here
