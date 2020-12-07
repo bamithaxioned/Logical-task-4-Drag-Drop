@@ -178,7 +178,7 @@ header .wrapper { justify-content: space-between; }
   }
 
   .priority-box {
-    margin: 10px 0;
+    margin: 20px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -186,10 +186,33 @@ header .wrapper { justify-content: space-between; }
 
   .priority-content {
     width: 30%;
-    background-color: #000;
-    height: 400px;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
   }
   
+  .priority-content-heading {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+  }
+  .priority-content-box {
+    border: 1.8px solid #000;
+    border-top: none;
+    height: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
+  
+  .high { background-color: #ED1C24; }
+  .medium { background-color: #F26523; }
+  .low { background-color: #FAFF00; }
+
+
 /* banner styling ends here */
 
 /*=================================
