@@ -12,9 +12,7 @@ function func1() {
     // iterating task li
     for (list of taskLi) {
         list.addEventListener("dragstart", function () {
-            // console.log("Drag Start Event Triggered.")
             box = this;
-            // console.log(box);
             setTimeout(() => {
                 box.classList.add("hide");
                 box.classList.remove("show");
@@ -23,29 +21,23 @@ function func1() {
         })
 
         list.addEventListener("dragend", function () {
-            // console.log("Drag End Event Triggered.");
             setTimeout(() => {
                 box.classList.add("show");
                 box.classList.remove("hide");
                 // box = null;
             }, 0);
         })
-        // iterating priority content
 
+        // iterating priority content
         for (contentBox of priorityContentBox) {
 
             contentBox.addEventListener("dragover", function (e) {
-            // console.log("Drag Over Event Triggered.");
                 e.preventDefault();
             })
             contentBox.addEventListener("dragenter", function (e) {
-            // console.log("Drag Enter Event Triggered.");
             })
             contentBox.addEventListener("drop", function (e) {
-            // console.log("Drop Event Triggered.");
-               if(box !== null){
-                this.append(box);
-               }
+               if(box !== null) this.append(box); 
             })
         }
     }
